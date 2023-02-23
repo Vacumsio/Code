@@ -55,7 +55,7 @@
     "build": "npm-run-all clean transpile",
     "server": "node ./bin/app.js",
     "dev": "npm-run-all build server",
-    "start": "yarn dev",
+    "start": "node index",
     "watch": "nodemon"
   }
 }

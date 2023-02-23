@@ -1,0 +1,22 @@
+{
+  "quadraticEquation": [
+    {
+      "function": "ax**2+bx+c"
+    },
+    {
+      "function": "ax**2+c+bx"
+    },
+    {
+      "function": "bx+ax**2+c"
+    },
+    {
+      "function": "bx+c+ax**2"
+    },
+    {
+      "function": "c+ax**2+bx"
+    },
+    {
+      "function": "c+bx+ax**2"
+    }
+  ]
+}
