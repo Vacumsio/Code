@@ -10,15 +10,15 @@
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-openapi-validator": "^4.12.6",
     "jsonwebtoken": "^8.5.1",
-    "knex": "2.4.1",
+    "knex": "^2.4.2",
     "mongoose": "^5.12.2",
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
-    "pg": "^8.8.0",
+    "pg": "^8.9.0",
     "pg-query-stream": "^3.2.0",
     "swagger-routes-express": "^3.3.0",
     "swagger-ui-express": "^4.1.6",
@@ -53,9 +53,20 @@
     "transpile": "babel ./src --out-dir bin --copy-files",
     "clean": "rimraf bin",
     "build": "npm-run-all clean transpile",
-    "server": "node ./bin/app.js",
+    "server": "node src/app.js",
     "dev": "npm-run-all build server",
-    "start": "node index",
+    "start": "node src/app.js",
     "watch": "nodemon"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vacumsio/Code.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vacumsio/Code/issues"
+  },
+  "homepage": "https://github.com/Vacumsio/Code#readme"
 }

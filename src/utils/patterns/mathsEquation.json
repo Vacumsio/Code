@@ -18,5 +18,25 @@
     {
       "function": "c+bx+ax**2"
     }
+  ],
+  "quadraticEquationSimplyfied": [
+    {
+      "function": "ax**aaxa"
+    },
+    {
+      "function": "ax**aaax"
+    },
+    {
+      "function": "axax**aa"
+    },
+    {
+      "function": "axaax**a"
+    },
+    {
+      "function": "aax**aax"
+    },
+    {
+      "function": "aaxax**a"
+    }
   ]
 }
