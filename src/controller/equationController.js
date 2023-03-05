@@ -1,45 +1,24 @@
 const equationService = require("../service/equationService");
 
-// eslint-disable-next-line no-multi-assign
-module.exports = equationController = {
-  getAll: async (req, res, next) => {
+const equationController = {
+  getAll: async (req, res) => {
     try {
-      const equations = await equationService.getAll();
-      res.json(equations);
+      const equation = await equationService.getAll();
+      res.status(201).json(equation);
     } catch (error) {
-      next(error);
+      // console.error(error);
+      res.status(404).json("Data you were searching are missing");
     }
   },
-  getById: async (req, res, next) => {
-    try {
-      const equation = await equationService.getById(req.params.id);
-      res.json(equation);
-    } catch (error) {
-      next(error);
-    }
-  },
-  create: async (req, res, next) => {
+  create: async (req, res) => {
     try {
       const equation = await equationService.create(req.body);
-      res.json(equation);
+      res.status(201).json(equation);
     } catch (error) {
-      next(error);
-    }
-  },
-  update: async (req, res, next) => {
-    try {
-      const equation = await equationService.update(req.params.id, req.body);
-      res.json(equation);
-    } catch (error) {
-      next(error);
-    }
-  },
-  delete: async (req, res, next) => {
-    try {
-      const equation = await equationService.delete(req.params.id);
-      res.json(equation);
-    } catch (error) {
-      next(error);
+      // console.error(error);
+      res.status(500).json("Something went wrong");
     }
   },
 };
+
+module.exports = equationController;

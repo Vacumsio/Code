@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  pg:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      LANG: en_US.UTF-8
+      LANGUAGE: en_US:en
+      LC_ALL: en_US.UTF-8
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: postgres

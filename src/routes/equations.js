@@ -8,10 +8,5 @@ router
   .route("/")
   .get(equationController.getAll)
   .post(equationController.create);
-router
-  .route("/:id")
-  .get(equationController.getById)
-  .put(equationController.update)
-  .delete(equationController.delete);
 
 module.exports = router;

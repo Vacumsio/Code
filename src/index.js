@@ -9,7 +9,7 @@ const regex2 = /\d+x(?=[\s$])/;
 // Get 3rd part 'c'
 const regex3 = /(?<=[\s$])\d+(?=[\s$])/;
 
-const Discriminant = require("./src/utils/maths/quadraticEquation");
+const Discriminant = require("./utils/maths/quadraticEquation");
 
 const mathsEquation = new Discriminant(1, -1, -75);
 
